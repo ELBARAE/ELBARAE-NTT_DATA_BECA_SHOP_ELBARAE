@@ -1,18 +1,34 @@
  <!-- Header/Hero Section -->
  <header class="hero main-bg">
-  <div class="container hero">
-      <div class="flex">
-          <div class="hero-text">
-              <h1 class="blue-text">404 NOT FOUND</h1>
-              <h2>Home . Pages <span class="pink-text">. 404 Not Found</span></h2>
-          </div>
-      </div>
-  </div>
+  <div id="header"></div>
+<section class="breadcrumb-page">
+    <div class="container">
+        <h2 class="title-page">404 NOT FOUND</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="">Page</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="pagenot-found.html">404 NOT FOUND</a></li>
+            </ol>
+        </nav>
+    </div>
+</section>
+  
+  
 </header>
 
-<!-- 404 error message -->
-<section class="error-message">
-  <img src="img/Group 197.png" alt="">
-  <h2 class="main-header-text">oops! The page you requested was not found!</h2>
-  <button>Back To Home</button>
-</section>
+<div style="display:flex ;justify-content:center; "><!-- 404 error message -->
+ <section class="error-message">
+  <div><img src="https://i.ibb.co/0VMPygb/404notfound.png" alt=""></div>
+     
+  <div style="display:flex ;justify-content:center;">
+    <a href="main" ><button style="background-color:#d63384;" type="button" class="btn btn-primary">
+      Back To Home</button>
+    </a>
+  </div>
+  
+
+  </section>
+</div>
+<script src="../assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+<script src="../assets/js/homepage.js"></script>

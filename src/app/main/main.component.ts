@@ -14,12 +14,16 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
     this.getAllProducts()
   }
+ 
   getAllProducts(){
     this.productService.getAllProducts()
         .then(res=>res.json())
         .then((res=>{
           this.products = res.products
         }))
+  }
+  getPriceWithDiscount(item:any){
+    return item.price + ((item.discountPercentage * item.price)/100)
   }
 
 }

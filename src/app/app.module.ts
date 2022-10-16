@@ -8,9 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { ShopGridComponent } from './shop-grid/shop-grid.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { BlogComponent } from './blog/blog.component';
 import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
 import { ShopLeftSidebarComponent } from './shop-left-sidebar/shop-left-sidebar.component';
 import { ShopListComponent } from './shop-list/shop-list.component';
@@ -18,7 +16,6 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { LoginComponent } from './login/login.component';
 import { CompletedOrderComponent } from './completed-order/completed-order.component';
 import { ShippingInfoComponent } from './shipping-info/shipping-info.component';
-import { SingleBlogComponent } from './single-blog/single-blog.component';
 import { FaqComponent } from './faq/faq.component';
 import { FormsModule } from '@angular/forms';
 
@@ -30,9 +27,7 @@ import { FormsModule } from '@angular/forms';
     MainComponent,
     AboutUsComponent,
     ContactComponent,
-    ShopGridComponent,
     ProductDetailsComponent,
-    BlogComponent,
     PagenotFoundComponent,
     ShopLeftSidebarComponent,
     ShopListComponent,
@@ -40,7 +35,6 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     CompletedOrderComponent,
     ShippingInfoComponent,
-    SingleBlogComponent,
     FaqComponent
   ],
   imports: [
