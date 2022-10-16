@@ -1,0 +1,208 @@
+@import url(./blog-page.css);
+
+.single__blog {
+    margin-top: 114px;
+}
+
+.post .post__desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8A8FB9;
+    margin-top: 43px;
+    margin-bottom: 32px;
+}
+
+.post .post__quote {
+    margin-top: 43px;
+    margin-bottom: 43px;
+    background: #FAFAFB;
+    padding: 35px 21px 18px 14px;
+    border-left: 2px solid #FC45A0;
+}
+
+.post .post__quote .blockquote {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+    color: #969CB4;
+    margin-bottom: 0;
+}
+
+.post .post__video img,
+.post .post__image img {
+    width: 100%;
+}
+
+.post .post__product .post_product_thumb img {
+    width: 100%;
+}
+
+.post .post__product .post_product_body .post_product_name {
+    font-size: 19.681px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    padding-left: 24px;
+    padding-top: 15px;
+    margin-bottom: 16px;
+}
+
+.post .post__product .post_product_price {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #232A69;
+}
+
+.post .post__product .post_product_price .text-decoration-line-through {
+    color: #FF38B0;
+    padding-left: 9px;
+}
+
+.post .post_product_rating {
+    margin-right: 15px;
+    /* padding-top: 3px; */
+}
+
+.post .post_product_rating .iconify {
+    color: #B2B2B2;
+    width: 13.25px;
+    height: 13.25px;
+}
+
+.post .post_product_rating .iconify.rating-color {
+    color: #FFD659;
+}
+
+.post .post__share a {
+    width: 25px;
+    height: 25px;
+    margin-top: 59px;
+    margin-bottom: 27px;
+    margin-left: 14px;
+    border-radius: 50%;
+}
+
+.post .post__share a.facebook {
+    background-color: #5625DF;
+}
+
+.post .post__share a.instagram {
+    background-color: #FF27B7;
+}
+
+.post .post__share a.twitter {
+    background-color: #37DAF3;
+}
+
+.post .post__share .iconify {
+    color: #fff;
+    margin: 4px;
+}
+
+.post .post__pagination {
+    background: #F7F8FB;
+    border-radius: 3px;
+}
+
+.post .post__pagination a {
+    text-decoration: none;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #8A8FB9;
+    padding: 13px 23px;
+}
+
+.multi-blog {
+    margin-top: 71px;
+}
+
+.blog {
+    box-shadow: 0px 0px 17.0038px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    padding: 14px;
+}
+
+.blog .blog_thumbnail {
+    border-radius: 2.26718px;
+    margin-right: 15px;
+}
+
+.blog .blog_body {
+    margin-top: 23px;
+}
+
+.blog .blog_body .blog_title {
+    width: 115px;
+    font-size: 18.1374px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #363385;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.blog .blog_body .blog_date {
+    font-family: 'lato', sans-serif;
+    color: #A3A2B6;
+    font-size: 12.4695px;
+    line-height: 15px;
+    margin-bottom: 0;
+    padding-top: 2px;
+}
+
+.blog .blog_body .blog_entry{
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #A3A2B6;
+}
+
+.comment{
+    margin-top: 135px;
+}
+
+.comment .col-6 input,
+.comment textarea{
+    width: 100%;
+}
+
+.comment .col-6 input{
+    border: 1px solid #8A8FB9;
+    padding: 11px;
+    margin-bottom: 45px;
+}
+.comment input::placeholder,
+.comment textarea::placeholder
+{
+    color: #8A8FB9;
+    font-size: 16px;
+}
+
+.comment textarea{
+    border: 1px solid #8A8FB9;
+    padding: 11px;
+    height: 206px;
+    margin-bottom: 22px;
+}
+.comment span{
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #8A91AB;
+}
+
+.comment button{
+    color: #fff;
+    width:90%;
+    background: #FB2E86;
+    border-radius: 2px;
+    margin-top: 46px;
+    margin-left: 15px;
+}

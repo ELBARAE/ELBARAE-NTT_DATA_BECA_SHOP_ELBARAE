@@ -1,0 +1,147 @@
+@import url("../css/breadcrumb-page.css");
+
+.main-container{
+    padding-top:120px;
+}
+
+.main-container h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #151875;
+}
+
+.information{
+    padding-right: 72px;
+}
+
+.information p{
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8A8FB9;
+}
+
+.color-group label{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+    margin-right: 14px;
+    border-radius: 50%;
+    background: #5625DF;
+    position: relative;
+}
+.color-group label.pink{
+    background: #FF27B7;
+}
+.color-group label.light-blue{
+    background: #37DAF3;
+}
+
+.color-group label input{
+    position: absolute;
+    visibility: hidden;
+}
+
+.contact-ways .row{
+    margin-top: 26px;
+}
+.contact-ways .contactway{
+    margin-bottom: 49px;
+}
+
+.contact-ways p,
+.form p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8A8FB9;
+    margin-bottom: 0;
+}
+
+.contact-ways label{
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    margin-top: 3px;
+    border-radius: 50%;
+    background: #5625DF;
+    position: relative;
+}
+
+.contact-ways label.pink{
+    background: #FB2E86;
+}
+.contact-ways label.orange{
+    background: #FFB265;
+}
+.contact-ways label.green{
+    background: #1BE982;
+}
+
+.contact-ways label input{
+    position: absolute;
+    visibility: hidden;
+}
+
+.main-container .form{
+    margin-top: 120px;
+}
+
+.main-container .form .form-control::placeholder{
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #8A8FB9;
+}
+.main-container .form .form-control{
+    width: 100%;
+    border: 1px solid rgba(164, 182, 200, 0.7);
+    border-radius: 3px;
+}
+#client-name, #client-email{
+    margin-top: 46px;
+}
+#client-subject{
+    margin-top: 34px;
+}
+.form textarea{
+    margin-top: 47px;
+    height: 166px;
+}
+.form .btn-sendmail{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    background: #FB2E86;
+    border-radius: 3px;
+    padding: 9px 42px;
+    margin-top: 33px;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .main-container{
+        padding-top: 20px;
+    }
+    .main-container h2{
+        font-size: 28px;
+    }
+    .color-group label{
+        margin-top: 15px;
+    }
+    .contact-ways .row{
+        margin-top: 10px;
+    }
+    .contact-ways .contactway{
+        margin-bottom: 20px;
+    }
+    .main-container .form{
+        margin-top: 20px;
+    }
+}

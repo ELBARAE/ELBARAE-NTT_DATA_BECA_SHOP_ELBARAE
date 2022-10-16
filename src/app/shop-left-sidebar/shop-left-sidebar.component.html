@@ -1,0 +1,328 @@
+<div id="header"></div>
+
+<section class="breadcrumb-page">
+    <div class="container">
+        <h2 class="title-page">Shop Left Sidebar</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="">Page</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section class="main-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-12 title">
+                <h4>Ecommerce Acceories & Fashion item</h4>
+                <p>About 9.620 results (0.62 seconds)</p>
+            </div>
+            <div class="col-xl-8 col-lg-9 col-md-12 product-sorting">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex">
+                                <label for="per-page">Per Page:  </label>
+                                <input type="text" id="per-page">
+                            </div>
+                            <div class="filter__sort d-flex">
+                                <p>Sort By: </p>
+                                <form action="" method="get">
+                                    <select name="select" id="sortBy">
+                                        <option value="value">Best Match</option>
+                                        <option value="value">Best Match</option>
+                                        <option value="value">Best Match</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-5 col-lg-5 col-md-5">
+                        <div class="d-flex view justify-content-end">
+                            <p>View: </p>
+                            <a href="./shop-grid-default.html"><span class="iconify" data-icon="clarity:grid-view-solid"></span></a>
+                            <a href="./shop-list.html"><span class="iconify" data-icon="fa-solid:list"></span></a>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form #form="ngForm">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="shop__sidebar">
+                    <button class="btn.btn-primary" (click)="filterProducts()">
+                        Filter
+                    </button>
+                    <div class="sidebar__discount__offer mt-44">
+                        <div class="sidebar__title">
+                            <h3 class="text-decoration-underline">Discount Offer</h3>
+                        </div>
+                        <div class="list__offer d-flex flex-column">
+                            <label class="checkbox__filter" for="25_cashback">25% Cashback
+                                <input (change)="filterProducts()" type="checkbox" name="hh0" 
+                                       id="25_cashback" [(ngModel)]="discount_offer[2].checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="20_cashback">20% Cashback Offer
+                                <input (change)="filterProducts()" type="checkbox" name="hh1" 
+                                       id="20_cashback" [(ngModel)]="discount_offer[1].checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="5_cashback">5% Discount Offer
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="discount_offer[0].checked"
+                                       name="hh2" id="5_cashback">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__rating__filter mt-44">
+                        <div class="sidebar__title">
+                            <h3 class="text-decoration-underline">Rating Item</h3>
+                        </div>
+                        <div class="list__rating d-flex flex-column">
+                            <label class="checkbox__filter" for="5__star">
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                (5678)
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="stars[4].checked" name="hh3" id="5__star">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="4__star">
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                (2341)
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="stars[3].checked" name="hh4" id="4__star">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="3__star">
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                (1726)
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="stars[2].checked" name="hh" id="3__star">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="2__star">
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                (258)
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="stars[1].checked" name="hh5" id="2__star">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="1__star">
+                                <span class="iconify rating-color" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                (25)
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="stars[0].checked" name="hh6" id="1__star">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__categories__filter mt-44">
+                        <div class="sidebar__title">
+                            <h3 class="text-decoration-underline">Categories</h3>
+                        </div>
+                       
+                        <div class="list__categories d-flex flex-column" *ngFor="let item of selectedCategories">
+                            <label class="checkbox__filter" for="{{item.value}}">{{item.value}}
+                                <input (change)="filterProducts()" type="checkbox"
+                                       [(ngModel)]="item.checked"
+                                       name="item.value" 
+                                       id="{{item.value}}">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="sidebar__price__filter mt-44">
+                        <div class="sidebar__title">
+                            <h3 class="text-decoration-underline">Price Filter</h3>
+                        </div>
+                        <div class="list__price d-flex flex-column">
+                            <label class="checkbox__filter" for="price__01">$0.00 - $150.00
+                                <input (change)="filterProducts()" type="checkbox" [(ngModel)]="prices[0].checked" 
+                                                       name="hh7" id="price__01">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="price__02">$150.00 - $350.00
+                                <input (change)="filterProducts()" type="checkbox" name="hh8" 
+                                       [(ngModel)]="prices[1].checked" id="price__02">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="price__03">$350.00 - $450.00
+                                <input (change)="filterProducts()" type="checkbox" 
+                                       [(ngModel)]="prices[2].checked" 
+                                       name="hh9" id="price__03">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox__filter" for="price__04">$450.00 +
+                                <input (change)="filterProducts()" type="checkbox" name="hh10" 
+                                       [(ngModel)]="prices[3].checked" id="price__04">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <!-- content -->
+
+            <div class="col-xl-9 col-lg-9 col-md-9">
+                <div class="shop__list__product">
+                    <div class="row" *ngIf="isFilterOff()">
+                        <div class="col-12" *ngFor="let item of randomProducts">
+                            <div class="product__item d-flex">
+                                <div class="col-xl-4 col-lg-4 col-md-4 product__item__image">
+                                    <img src="{{item.images[0]}}" 
+                                         alt="" height="150" width="150">
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 product__item__info">
+                                    <div class="d-flex">
+                                        <h4 class="product__item__name">{{item.title}}</h4>
+                                        <div class="product__item__color_select">
+                                            <label for="pic-01">
+                                                <input type="radio" id="pic-01">
+                                            </label>
+                                            <label for="pic-02" class="pink">
+                                                <input type="radio" id="pic-02">
+                                            </label>
+                                            <label for="pic-03" class="blue">
+                                                <input type="radio" id="pic-03">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="product__item__price">
+                                            <span class="reduced__price">${{item.price}}</span>
+                                            <span class="price text-decoration-line-through">
+                                                ${{getPriceWithDiscount(item)}}
+                                            </span>
+                                        </div>
+                                        <div class="product__item__rating d-flex">
+                                            <span class="iconify rating-color"
+                                                  *ngFor="let star of ' '.repeat(getNumberOfStars(item))
+                                                                         .split('')"   
+                                                  data-icon="ant-design:star-filled"></span>
+                                            <span class="iconify" 
+                                                  data-icon="ant-design:star-filled"
+                                                  *ngFor="let em of ' '.repeat(getNumberOfEmptyStars(item))
+                                                                        .split('')">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="product__item__desc">
+                                        {{item.description}}
+                                    </p>
+                                    <div class="product__item__action d-flex">
+                                       <a href="" title="Add to Cart"><span class="iconify" data-icon="fluent:cart-24-regular" data-width="20"></span></a>
+                                       <a href="" title="WishList"><span class="iconify" data-icon="uil:heart-alt" data-width="18"></span></a>
+                                       <a href="product-details" title="More detail"><span class="iconify" data-icon="uil:search-plus" data-width="18"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row" *ngIf="!isFilterOff()">
+                        <div class="col-12" *ngFor="let item of productsAfterFilter">
+                            <div class="product__item d-flex">
+                                <div class="col-xl-4 col-lg-4 col-md-4 product__item__image">
+                                    <img src="{{item.images[0]}}" 
+                                         alt="" height="150" width="150">
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 product__item__info">
+                                    <div class="d-flex">
+                                        <h4 class="product__item__name">{{item.title}}</h4>
+                                        <div class="product__item__color_select">
+                                            <label for="pic-01">
+                                                <input type="radio" id="pic-01">
+                                            </label>
+                                            <label for="pic-02" class="pink">
+                                                <input type="radio" id="pic-02">
+                                            </label>
+                                            <label for="pic-03" class="blue">
+                                                <input type="radio" id="pic-03">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="product__item__price">
+                                            <span class="reduced__price">${{item.price}}</span>
+                                            <span class="price text-decoration-line-through">
+                                                ${{getPriceWithDiscount(item)}}
+                                            </span>
+                                        </div>
+                                        <div class="product__item__rating d-flex">
+                                            <span class="iconify rating-color"
+                                                  *ngFor="let star of ' '.repeat(getNumberOfStars(item))
+                                                                         .split('')"   
+                                                  data-icon="ant-design:star-filled"></span>
+                                            <span class="iconify" 
+                                                  data-icon="ant-design:star-filled"
+                                                  *ngFor="let em of ' '.repeat(getNumberOfEmptyStars(item))
+                                                                        .split('')">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="product__item__desc">
+                                        {{item.description}}
+                                    </p>
+                                    <div class="product__item__action d-flex">
+                                       <a href="" title="Add to Cart"><span class="iconify" data-icon="fluent:cart-24-regular" data-width="20"></span></a>
+                                       <a href="" title="WishList"><span class="iconify" data-icon="uil:heart-alt" data-width="18"></span></a>
+                                       <a href="product-details" title="More detail"><span class="iconify" data-icon="uil:search-plus" data-width="18"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</section>
+
+<div class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="../assets/images/image 1174.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<!-- JS -->
+<script src="../assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+
+<script src="../assets/js/jquery.nice-select.min.js"></script>
+<script src="../assets/js/homepage.js"></script>
